@@ -9,3 +9,5 @@ function pathOr(object, paths, defaultValue) {
 
   return value == null ? defaultValue : value;
 }
+
+exports.pathOr = pathOr;

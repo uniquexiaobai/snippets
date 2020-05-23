@@ -1,10 +1,12 @@
 function once(func) {
-  var executed = false;
+  var isExecuted = false;
 
   return function () {
-    if (!executed) {
-      executed = true;
-      func.apply(this, arguments);
+    if (!isExecuted) {
+      isExecuted = true;
+      func.apply(null, arguments);
     }
   };
 }
+
+exports.once = once;

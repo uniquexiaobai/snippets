@@ -1,0 +1,24 @@
+{
+  "name": "snippets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:prod": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uniquexiaobai/snippets.git"
+  },
+  "keywords": [],
+  "author": "uniquexiaobai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uniquexiaobai/snippets/issues"
+  },
+  "homepage": "https://github.com/uniquexiaobai/snippets#readme",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
+}
