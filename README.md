@@ -8,6 +8,7 @@
 
 ### number
 
+- [x] [decimal](./number/decimal)
 - [x] [random](./number/random)
 - [x] [range](./number/range)
 
@@ -47,7 +48,6 @@
 - [x] [isNative](./browser/is-native.js)
 - [x] [isWifi](./browser/is-wifi.js)
 - [x] [jsonp](./browser/jsonp.js)
-- [x] [localStorage](./browser/local-storage.js)
 - [x] [nextTick](./browser/next-tick.js)
 - [x] [pubsub](./browser/pubsub.js)
 - [x] [serviceWorker](./browser/servie-worker.js)
