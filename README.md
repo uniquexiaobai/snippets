@@ -44,6 +44,7 @@
 
 ### browser
 
+- [x] [cookie]](./browser/cookie.js)
 - [x] [isBrowser](./browser/is-browser.js)
 - [x] [isNative](./browser/is-native.js)
 - [x] [isWifi](./browser/is-wifi.js)
