@@ -20,3 +20,6 @@ function shuffle(arr) {
 function shuffle1(arr) {
   return arr.sort(() => Math.random() - 0.5);
 }
+
+exports.shuffle = shuffle;
+exports.shuffle1 = shuffle1;

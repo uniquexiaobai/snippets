@@ -21,6 +21,7 @@
 ### array
 
 - [x] [flatten](./array/flatten.js)
+- [x] [groupBy](./array/group-by.js)
 - [x] [isSorted](./array/is-sorted.js)
 - [x] [shuffle](./array/shuffle.js)
 - [x] [unique](./array/unique.js)
@@ -41,10 +42,12 @@
 ### regexp
 
 - [x] [isEmail](./regexp/is-email.js)
+- [x] [isNumeric]('./regexp/is-number.js)
 
 ### browser
 
-- [x] [cookie]](./browser/cookie.js)
+- [x] [batchRequest]('./browser/batch-request.js) 可控制并发数的批量请求
+- [x] [cookie](./browser/cookie.js)
 - [x] [isBrowser](./browser/is-browser.js)
 - [x] [isNative](./browser/is-native.js)
 - [x] [isWifi](./browser/is-wifi.js)

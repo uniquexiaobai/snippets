@@ -1,9 +1,13 @@
-Object.mycreate = function (obj) {
+Object.mycreate = function (proto, properties) {
   var F = function () {};
 
-  F.prototype = obj;
+  F.prototype = proto;
 
-  return new F();
+  var obj = new F();
+
+  return properties === undefined
+    ? obj
+    : Object.defineProperty(obj, properties);
 };
 
 var person = {
