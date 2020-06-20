@@ -3,8 +3,10 @@
 ### function
 
 - [x] [bind](./function/bind.js)
+- [x] [debounce](./function/debounce.js)
 - [x] [memoize](./function/memoize.js)
 - [x] [once](./function/once.js)
+- [x] [throttle](./function/throttle.js)
 
 ### number
 
@@ -20,11 +22,11 @@
 
 ### array
 
-- [x] [flatten](./array/flatten.js)
+- [][flatten](./array/flatten.js)
 - [x] [groupBy](./array/group-by.js)
 - [x] [isSorted](./array/is-sorted.js)
 - [x] [shuffle](./array/shuffle.js)
-- [x] [unique](./array/unique.js)
+- [][unique](./array/unique.js)
 
 ### object
 
@@ -50,10 +52,9 @@
 - [x] [cookie](./browser/cookie.js)
 - [x] [isBrowser](./browser/is-browser.js)
 - [x] [isNative](./browser/is-native.js)
-- [x] [isWifi](./browser/is-wifi.js)
+- [][iswifi](./browser/is-wifi.js)
 - [x] [jsonp](./browser/jsonp.js)
 - [x] [nextTick](./browser/next-tick.js)
-- [x] [pubsub](./browser/pubsub.js)
 - [x] [serviceWorker](./browser/servie-worker.js)
 - [x] [worker](./browser/worker.js)
 
