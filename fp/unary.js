@@ -1,5 +1,7 @@
 function unary(func) {
-  return function () {
-    return func.call(null, arguments[0]);
+  return (...args) => {
+    return func(args[0]);
   };
 }
+
+module.exports = unary;

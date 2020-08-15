@@ -22,7 +22,7 @@
 
 ### array
 
-- [][flatten](./array/flatten.js)
+- [ ][flatten](./array/flatten.js)
 - [x] [groupBy](./array/group-by.js)
 - [x] [isSorted](./array/is-sorted.js)
 - [x] [shuffle](./array/shuffle.js)
@@ -52,7 +52,7 @@
 - [x] [cookie](./browser/cookie.js)
 - [x] [isBrowser](./browser/is-browser.js)
 - [x] [isNative](./browser/is-native.js)
-- [][iswifi](./browser/is-wifi.js)
+- [ ][iswifi](./browser/is-wifi.js)
 - [x] [jsonp](./browser/jsonp.js)
 - [x] [nextTick](./browser/next-tick.js)
 - [x] [serviceWorker](./browser/servie-worker.js)
@@ -76,6 +76,7 @@
 - [x] [partial](./fp/partial.js)
 - [x] [pick](./fp/pick.js)
 - [x] [unary](./fp/unary.js)
+- [x] [uncurry](./fp/uncurry.js)
 
 ### design platterns
 
