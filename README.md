@@ -3,8 +3,10 @@
 ### function
 
 - [x] [bind](./function/bind.js)
+- [x] [call](./function/call.js)
 - [x] [debounce](./function/debounce.js)
 - [x] [memoize](./function/memoize.js)
+- [x] [new](./function/new.js)
 - [x] [once](./function/once.js)
 - [x] [throttle](./function/throttle.js)
 
@@ -22,17 +24,21 @@
 
 ### array
 
-- [ ][flatten](./array/flatten.js)
+- [ ] [flatten](./array/flatten.js)
 - [x] [groupBy](./array/group-by.js)
 - [x] [isSorted](./array/is-sorted.js)
 - [x] [shuffle](./array/shuffle.js)
-- [][unique](./array/unique.js)
+- [ ] [unique](./array/unique.js)
 
 ### object
 
+- [x] [deepCopy](./object/deep-copy.js)
+- [x] [instanceof](./object/instanceof.js)
 - [x] [ObjectCreate](./object/object-create.js)
+- [x] [ObjectIs](./object/object-is.js)
 - [x] [pathOr](./object/path-or.js)
 - [x] [propOr](./object/prop-or.js)
+- [x] [shallowEqual](./object/shallow-equal.js)
 
 ### date
 
@@ -52,7 +58,7 @@
 - [x] [cookie](./browser/cookie.js)
 - [x] [isBrowser](./browser/is-browser.js)
 - [x] [isNative](./browser/is-native.js)
-- [ ][iswifi](./browser/is-wifi.js)
+- [ ] [iswifi](./browser/is-wifi.js)
 - [x] [jsonp](./browser/jsonp.js)
 - [x] [nextTick](./browser/next-tick.js)
 - [x] [serviceWorker](./browser/servie-worker.js)
