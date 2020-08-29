@@ -61,6 +61,8 @@
 - [ ] [iswifi](./browser/is-wifi.js)
 - [x] [jsonp](./browser/jsonp.js)
 - [x] [nextTick](./browser/next-tick.js)
+- [x] [request](./browser/request.js)
+- [x] [requestIdleCallback](./browser/requestIdleCallback.js)
 - [x] [serviceWorker](./browser/servie-worker.js)
 - [x] [worker](./browser/worker.js)
 

@@ -1,19 +1,31 @@
 // https://github.com/developit/redaxios/blob/master/src/index.js
 
-const createRequest = (defaults = {}) => {
+const createRequest = function create(defaults = {}) {
   const request = (url, config = {}) => {
     const fetch = window.fetch;
     const options = Object.assign({}, defaults, config);
-    const data = options.data;
-
-    if (options.transformRequest) {
-      //
-    }
-
     const headers = Object.assign({}, options.headers);
+    let data = options.data;
+
+    (options.transformRequest || []).forEach(f => {
+      data = f(data, options.headers) || data;
+    });
+
     if (data && typeof data === 'object') {
       data = JSON.stringify(data);
       headers['Content-Type'] = 'application/json';
+    }
+
+    if (options.baseURL) {
+      url = new URL(url, options.baseURL) + '';
+    }
+
+    if (options.params) {
+      const divider = ~url.indexOf('?') ? '&' : '?';
+      const query = options.paramsSerializer
+        ? options.paramsSerializer(options.params)
+        : new URLSearchParams(options.params);
+      url += divider + query;
     }
 
     const response = {};
@@ -23,19 +35,22 @@ const createRequest = (defaults = {}) => {
       method: options.method,
       body: data,
       headers,
+      credentials: options.withCredentials ? 'include' : undefined,
     }).then(res => {
-      let key;
-      for (key in res) {
-        if (typeof res[key] != 'function') response[key] = res[key];
+      for (const key in res) {
+        if (typeof res[key] !== 'function') response[key] = res[key];
       }
 
-      if (
-        !(options.validateStatus ? options.validateStatus(res.status) : res.ok)
-      ) {
-        return Promise.reject(response);
+      const ok = options.validateStatus
+        ? options.validateStatus(res.status)
+        : res.ok;
+      if (!ok) return Promise.reject(response);
+
+      if (options.responseType === 'stream') {
+        response.data = res.body;
+        return response;
       }
 
-      // stream
       return res[options.responseType || 'text']().then(data => {
         response.data = data;
         return response;
@@ -54,11 +69,15 @@ const createRequest = (defaults = {}) => {
 
   request.options = createBodyLessMethod('options');
   request.get = createBodyLessMethod('get');
+  request.delete = createBodyLessMethod('delete');
+
   request.post = createBodyMethod('post');
   request.put = createBodyMethod('put');
-  request.delete = createBodyMethod('delete');
+  request.patch = createBodyMethod('patch');
+
+  request.create = create;
 
   return request;
 };
 
-module.exports = createRequest;
+module.exports = createRequest();
