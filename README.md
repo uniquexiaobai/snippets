@@ -54,7 +54,6 @@
 
 ### browser
 
-- [x] [batchRequest]('./browser/batch-request.js) 可控制并发数的批量请求
 - [x] [cookie](./browser/cookie.js)
 - [x] [isBrowser](./browser/is-browser.js)
 - [x] [isNative](./browser/is-native.js)
@@ -62,6 +61,8 @@
 - [x] [jsonp](./browser/jsonp.js)
 - [x] [nextTick](./browser/next-tick.js)
 - [x] [request](./browser/request.js)
+- [x] [requestBatch](./browser/request-batch.js)
+- [x] [requestRetry](./browser/request-retry.js)
 - [x] [requestIdleCallback](./browser/requestIdleCallback.js)
 - [x] [serviceWorker](./browser/servie-worker.js)
 - [x] [worker](./browser/worker.js)
