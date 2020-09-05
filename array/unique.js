@@ -1,1 +1,7 @@
-// https://jsbin.com/zihemeh/6/edit?js,console
+function unique(arr) {
+  return arr.reduce((acc, val) => {
+    return acc.includes(val) ? acc : [...acc, val];
+  }, []);
+}
+
+module.exports = unique;

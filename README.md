@@ -24,11 +24,11 @@
 
 ### array
 
-- [ ] [flatten](./array/flatten.js)
+- [x] [flatten](./array/flatten.js)
 - [x] [groupBy](./array/group-by.js)
 - [x] [isSorted](./array/is-sorted.js)
 - [x] [shuffle](./array/shuffle.js)
-- [ ] [unique](./array/unique.js)
+- [x] [unique](./array/unique.js)
 
 ### object
 
