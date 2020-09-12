@@ -12,15 +12,15 @@
 
 ### number
 
-- [x] [decimal](./number/decimal)
-- [x] [random](./number/random)
-- [x] [range](./number/range)
+- [x] [decimal](./number/decimal.js)
+- [x] [random](./number/random.js)
+- [x] [range](./number/range.js)
 
 ### string
 
-- [x] [randomId](./string/random-id)
-- [x] [repeat](./string/repeat)
-- [x] [separate](./string/separate)
+- [x] [randomId](./string/random-id.js)
+- [x] [repeat](./string/repeat.js)
+- [x] [separate](./string/separate.js)
 
 ### array
 
@@ -45,12 +45,13 @@
 - [x] [ageOfYear](./date/age-of-year.js)
 - [x] [format](./date/format.js)
 - [x] [getMonthDays](./date/getMonthDays.js)
-- [x] [timeAge](./date/timeAge.js)
+- [x] [timeAgo](./date/time-ago.js)
 
 ### regexp
 
 - [x] [isEmail](./regexp/is-email.js)
 - [x] [isNumeric]('./regexp/is-number.js)
+- [x] [isUrl]('./regexp/is-url.js)
 
 ### browser
 
@@ -69,6 +70,7 @@
 
 ### dom
 
+- [ ] [clipboard](./dom/clipboard.js)
 - [x] [imgToBase64](./dom/img-to-base64.js)
 - [x] [isInViewport](./dom/is-in-viewport.js)
 - [x] [lazyImg](./dom/lazy-img.js)
@@ -89,9 +91,9 @@
 
 ### design platterns
 
-- [x] [decorator](./design-platterns/decorator.js) 装饰者模式
-- [x] [observer](./design-platterns/observer.js) 观察者模式
-- [x] [proxy](./design-platterns/proxy.js) 代理模式
-- [x] [pubsub](./design-platterns/pubsub.js) 订阅模式
-- [x] [singleton](./design-platterns/singleton.js) 单例模式
-- [x] [strategy](./design-platterns/strategy.js) 策略模式
+- [x] [decorator](./design-patterns/decorator.js) 装饰者模式
+- [x] [observer](./design-patterns/observer.js) 观察者模式
+- [x] [proxy](./design-patterns/proxy.js) 代理模式
+- [x] [pubsub](./design-patterns/pubsub.js) 订阅模式
+- [x] [singleton](./design-patterns/singleton.js) 单例模式
+- [x] [strategy](./design-patterns/strategy.js) 策略模式
